@@ -1,6 +1,6 @@
 ---
-title: "first post"
-subtitle: "첫번째 포스트"
+title: "second post"
+subtitle: "두번째 포스트"
 date: "2023-02-14"
 ---
 
