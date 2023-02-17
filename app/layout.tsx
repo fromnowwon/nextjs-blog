@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "../styles/globals.css";
 
 export default function RootLayout({
   children,
@@ -7,20 +8,18 @@ export default function RootLayout({
   }) {
   const header = (
     <header>
-      <div>
+      <div className="text-center bg-slate-800 mt-6 mb-6 p-8">
         <Link href="/">
-          <h1>My Blog</h1>
+          <h1 className="text-3xl font-bold text-white">My Blog</h1>
         </Link>
-        <p>Welcome to My Blog!</p>
-        <br />
+        <p className="text-slate-300 mt-3">Welcome to My Blog!</p>
       </div>
     </header>
   );
 
   const footer = (
     <footer>
-      <div>
-        <br />
+      <div className="border-t border-slate-500 mt-6 p-8 text-center text-slate-500">
         <h3>Developed by CW</h3>
       </div>
     </footer>
@@ -30,10 +29,12 @@ export default function RootLayout({
     <html>
       <head />
       <body>
-        {header}
-        {children}
-        {footer}
+        <div className="mx-auto max-w-2xl px-6">
+          {header}
+          {children}
+          {footer}
+        </div>
       </body>
     </html>
-  )
+  );
 }

@@ -10,7 +10,7 @@ const HomePage = () => {
       {...post}
     />
   ));
-  return <div>{ postPreviews }</div>
+  return <div className="grid grid-cols-1 md:grid-cols-2 gap-4">{ postPreviews }</div>
 };
 
 export default HomePage;
